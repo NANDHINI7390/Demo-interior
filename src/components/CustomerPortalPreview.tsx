@@ -228,7 +228,7 @@ export const CustomerPortalPreview: React.FC<CustomerPortalPreviewProps> = ({
                             className="aspect-[4/3] rounded-xs overflow-hidden border border-[#46483F] cursor-pointer hover:opacity-80 transition-opacity"
                           >
                             <img
-                              src="/src/assets/images/var_kitchen_detail_1790654739950.jpg"
+                              src="/assets/var_kitchen_detail_1790654739950.jpg"
                               alt="Island installation"
                               className="w-full h-full object-cover"
                             />
@@ -238,7 +238,7 @@ export const CustomerPortalPreview: React.FC<CustomerPortalPreviewProps> = ({
                             className="aspect-[4/3] rounded-xs overflow-hidden border border-[#46483F] cursor-pointer hover:opacity-80 transition-opacity"
                           >
                             <img
-                              src="/src/assets/images/var_hardware_hero_1790654652422.jpg"
+                              src="/assets/var_hardware_hero_1790654652422.jpg"
                               alt="Hinge calibration"
                               className="w-full h-full object-cover"
                             />
@@ -248,7 +248,7 @@ export const CustomerPortalPreview: React.FC<CustomerPortalPreviewProps> = ({
                             className="aspect-[4/3] rounded-xs overflow-hidden border border-[#46483F] cursor-pointer hover:opacity-80 transition-opacity"
                           >
                             <img
-                              src="/src/assets/images/var_wardrobe_luxury_1790654724721.jpg"
+                              src="/assets/var_wardrobe_luxury_1790654724721.jpg"
                               alt="Wardrobe frame"
                               className="w-full h-full object-cover"
                             />

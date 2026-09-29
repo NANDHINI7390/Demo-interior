@@ -34,7 +34,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
   const [activeTab, setActiveTab] = useState<'overview' | 'beforeAfter' | 'timeline'>('overview');
   const images = [project.heroImage, ...project.gallery];
 
-  const beforePhoto = project.beforeImage || '/src/assets/images/var_kitchen_detail_1790654739950.jpg';
+  const beforePhoto = project.beforeImage || '/assets/var_kitchen_detail_1790654739950.jpg';
 
   const defaultTimeline = project.timeline || [
     { phase: '01. Spatial Survey & 3D Laser Measure', date: '3 Days', status: 'Completed' },

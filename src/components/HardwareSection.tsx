@@ -115,7 +115,7 @@ export const HardwareSection: React.FC<HardwareSectionProps> = ({
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[16/11] rounded-xs overflow-hidden border border-[#D9DAD0] shadow-xl bg-[#1C1D1A]">
               <img
-                src="/src/assets/images/var_hardware_hero_1790654652422.jpg"
+                src="/assets/var_hardware_hero_1790654652422.jpg"
                 alt="VAR Architectural Concealed Soft Close Hinge and Precision Hardware"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

@@ -23,25 +23,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   const slides: SlideItem[] = [
     {
       id: 0,
-      image: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+      image: '/assets/var_wardrobe_luxury_1790654724721.jpg',
       tag: 'BESPOKE WARDROBES & SUITES',
       room: 'Floor-to-Ceiling Dressing Suite',
     },
     {
       id: 1,
-      image: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      image: '/assets/var_living_dining_1790654677757.jpg',
       tag: 'APARTMENT INTERIORS',
       room: 'Curated Dining & Living Residence',
     },
     {
       id: 2,
-      image: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      image: '/assets/var_hero_kitchen_1790654633654.jpg',
       tag: 'MODULAR KITCHEN & LIVING',
       room: 'Contemporary Open Kitchen Suite',
     },
     {
       id: 3,
-      image: '/src/assets/images/var_showroom_1790654664447.jpg',
+      image: '/assets/var_showroom_1790654664447.jpg',
       tag: 'PUDUCHERRY SHOWROOM',
       room: 'Materials & Hardware Experience Studio',
     },

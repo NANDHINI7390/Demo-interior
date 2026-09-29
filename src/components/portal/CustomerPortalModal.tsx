@@ -54,7 +54,7 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
       name: 'Cabinet Finish — Muted Olive PU Matte',
       category: 'Cabinetry',
       status: 'Approved',
-      image: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      image: '/assets/var_hero_kitchen_1790654633654.jpg',
       details: 'Anti-fingerprint thermal PU lacquer on boiling waterproof marine ply.',
     },
     {
@@ -62,7 +62,7 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
       name: 'Hardware Handle — Knurled Graphite T-Bar',
       category: 'Hardware',
       status: 'Approved',
-      image: '/src/assets/images/var_handles_accessories_1790654753472.jpg',
+      image: '/assets/var_handles_accessories_1790654753472.jpg',
       details: 'Solid architectural brass with dark graphite PVD wear coating.',
     },
     {
@@ -70,7 +70,7 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
       name: 'Drawer System — Heavy Duty Tandem Double-Wall',
       category: 'Mechanism',
       status: 'Approved',
-      image: '/src/assets/images/var_hardware_hero_1790654652422.jpg',
+      image: '/assets/var_hardware_hero_1790654652422.jpg',
       details: 'Synchronized soft-close undermount slide rated to 40kg load.',
     },
     {
@@ -78,7 +78,7 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
       name: 'Countertop — Calacatta Gold Engineered Quartz',
       category: 'Stone',
       status: 'Pending Approval',
-      image: '/src/assets/images/var_kitchen_detail_1790654739950.jpg',
+      image: '/assets/var_kitchen_detail_1790654739950.jpg',
       details: '20mm thickness, non-porous stain proof, bookmatched waterfall vein.',
     },
     {
@@ -86,7 +86,7 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
       name: 'Integrated Lighting — 2700K Warm Architectural Strip',
       category: 'Lighting',
       status: 'Approved',
-      image: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+      image: '/assets/var_wardrobe_luxury_1790654724721.jpg',
       details: 'High CRI 95+ concealed aluminum extrusion channels.',
     },
   ]);
@@ -647,28 +647,28 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                           <div className="aspect-[4/3] rounded-xs overflow-hidden border border-[#D9DAD0] group cursor-pointer">
                             <img
-                              src="/src/assets/images/var_kitchen_detail_1790654739950.jpg"
+                              src="/assets/var_kitchen_detail_1790654739950.jpg"
                               alt="Countertop alignment"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                             />
                           </div>
                           <div className="aspect-[4/3] rounded-xs overflow-hidden border border-[#D9DAD0] group cursor-pointer">
                             <img
-                              src="/src/assets/images/var_hardware_hero_1790654652422.jpg"
+                              src="/assets/var_hardware_hero_1790654652422.jpg"
                               alt="Hinge calibration"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                             />
                           </div>
                           <div className="aspect-[4/3] rounded-xs overflow-hidden border border-[#D9DAD0] group cursor-pointer">
                             <img
-                              src="/src/assets/images/var_handles_accessories_1790654753472.jpg"
+                              src="/assets/var_handles_accessories_1790654753472.jpg"
                               alt="Handles installed"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                             />
                           </div>
                           <div className="aspect-[4/3] rounded-xs overflow-hidden border border-[#D9DAD0] group cursor-pointer">
                             <img
-                              src="/src/assets/images/var_hero_kitchen_1790654633654.jpg"
+                              src="/assets/var_hero_kitchen_1790654633654.jpg"
                               alt="Overall layout"
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                             />
@@ -761,8 +761,8 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                     <div>
                       {baCategory === 'kitchen' && (
                         <BeforeAfterSlider
-                          beforeImage="/src/assets/images/var_kitchen_detail_1790654739950.jpg"
-                          afterImage="/src/assets/images/var_hero_kitchen_1790654633654.jpg"
+                          beforeImage="/assets/var_kitchen_detail_1790654739950.jpg"
+                          afterImage="/assets/var_hero_kitchen_1790654633654.jpg"
                           beforeLabel="ORIGINAL SPACE (SEPT 10)"
                           afterLabel="VAR ARCHITECTURAL KITCHEN"
                           aspectRatio="aspect-[16/9]"
@@ -770,8 +770,8 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                       )}
                       {baCategory === 'wardrobe' && (
                         <BeforeAfterSlider
-                          beforeImage="/src/assets/images/var_handles_accessories_1790654753472.jpg"
-                          afterImage="/src/assets/images/var_wardrobe_luxury_1790654724721.jpg"
+                          beforeImage="/assets/var_handles_accessories_1790654753472.jpg"
+                          afterImage="/assets/var_wardrobe_luxury_1790654724721.jpg"
                           beforeLabel="EMPTY CLOSET WALL"
                           afterLabel="VAR FLUTED GLASS WARDROBE"
                           aspectRatio="aspect-[16/9]"
@@ -779,8 +779,8 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                       )}
                       {baCategory === 'living' && (
                         <BeforeAfterSlider
-                          beforeImage="/src/assets/images/var_showroom_1790654664447.jpg"
-                          afterImage="/src/assets/images/var_living_dining_1790654677757.jpg"
+                          beforeImage="/assets/var_showroom_1790654664447.jpg"
+                          afterImage="/assets/var_living_dining_1790654677757.jpg"
                           beforeLabel="BARE MASONRY HALL"
                           afterLabel="VAR LIVING & DINING SUITE"
                           aspectRatio="aspect-[16/9]"

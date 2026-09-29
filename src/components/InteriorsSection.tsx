@@ -27,7 +27,7 @@ export const InteriorsSection: React.FC<InteriorsSectionProps> = ({
       id: 'kitchens',
       title: 'Modular Kitchens',
       subtitle: 'Ergonomic, heat & moisture resistant layouts',
-      image: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      image: '/assets/var_hero_kitchen_1790654633654.jpg',
       description:
         'Architectural modular kitchens engineered with precision joinery, soft-close hardware, anti-fingerprint acrylic or PU finishes, and seamless quartz waterfall surfaces.',
       specifications: [
@@ -42,7 +42,7 @@ export const InteriorsSection: React.FC<InteriorsSectionProps> = ({
       id: 'wardrobes',
       title: 'Wardrobes',
       subtitle: 'Walk-in & sliding systems with sensor lighting',
-      image: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+      image: '/assets/var_wardrobe_luxury_1790654724721.jpg',
       description:
         'Floor-to-ceiling bespoke wardrobes with anodized aluminum profiles, fluted smoked glass, leather-wrapped accessory trays, and automated ambient sensor illumination.',
       specifications: [
@@ -57,7 +57,7 @@ export const InteriorsSection: React.FC<InteriorsSectionProps> = ({
       id: 'living',
       title: 'Living Rooms',
       subtitle: 'Contemporary media walls & acoustic paneling',
-      image: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      image: '/assets/var_living_dining_1790654677757.jpg',
       description:
         'Refined living spaces harmonizing textured stone, fluted wood paneling, floating credenzas, and integrated architectural ambient illumination.',
       specifications: [
@@ -72,7 +72,7 @@ export const InteriorsSection: React.FC<InteriorsSectionProps> = ({
       id: 'bedrooms',
       title: 'Bedrooms',
       subtitle: 'Quiet luxury sanctuaries tailored for serenity',
-      image: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      image: '/assets/var_living_dining_1790654677757.jpg',
       description:
         'Restful sanctuaries combining bespoke upholstered headboard walls, integrated bedside floating drawers, concealed vanity units, and quiet acoustic buffers.',
       specifications: [
@@ -87,7 +87,7 @@ export const InteriorsSection: React.FC<InteriorsSectionProps> = ({
       id: 'office',
       title: 'Office Interiors',
       subtitle: 'Executive workspaces and functional studios',
-      image: '/src/assets/images/var_showroom_1790654664447.jpg',
+      image: '/assets/var_showroom_1790654664447.jpg',
       description:
         'Productive commercial environments designed with ergonomic workstations, modular credenzas, architectural glass dividers, and acoustic ceiling baffles.',
       specifications: [
@@ -102,7 +102,7 @@ export const InteriorsSection: React.FC<InteriorsSectionProps> = ({
       id: 'full-home',
       title: 'Full Home Interiors',
       subtitle: 'Turnkey architectural harmony from entry to terrace',
-      image: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      image: '/assets/var_hero_kitchen_1790654633654.jpg',
       description:
         'Comprehensive turnkey execution covering civil modifications, bespoke carpentry, electrical planning, surface finishes, and hardware curation under one single point of accountability.',
       specifications: [

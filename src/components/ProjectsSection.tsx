@@ -19,11 +19,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       category: 'kitchens',
       categoryLabel: 'Kitchen',
       location: 'Beach Road, Puducherry',
-      heroImage: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      heroImage: '/assets/var_hero_kitchen_1790654633654.jpg',
       gallery: [
-        '/src/assets/images/var_kitchen_detail_1790654739950.jpg',
-        '/src/assets/images/var_hardware_hero_1790654652422.jpg',
-        '/src/assets/images/var_living_dining_1790654677757.jpg',
+        '/assets/var_kitchen_detail_1790654739950.jpg',
+        '/assets/var_hardware_hero_1790654652422.jpg',
+        '/assets/var_living_dining_1790654677757.jpg',
       ],
       overview:
         'A modern kitchen designed for beauty, functionality and everyday comfort. Clean lines, premium materials and smart storage solutions tailored for contemporary coastal living.',
@@ -46,10 +46,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       category: 'wardrobes',
       categoryLabel: 'Wardrobe',
       location: 'White Town, Puducherry',
-      heroImage: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+      heroImage: '/assets/var_wardrobe_luxury_1790654724721.jpg',
       gallery: [
-        '/src/assets/images/var_handles_accessories_1790654753472.jpg',
-        '/src/assets/images/var_hardware_hero_1790654652422.jpg',
+        '/assets/var_handles_accessories_1790654753472.jpg',
+        '/assets/var_hardware_hero_1790654652422.jpg',
       ],
       overview:
         'An expansive walk-in dressing suite with fluted smoked glass doors, Italian velvet-lined watch and jewelry pullouts, and automated soft ambient sensor illumination.',
@@ -72,10 +72,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       category: 'living',
       categoryLabel: 'Living Room',
       location: 'Lawspet, Puducherry',
-      heroImage: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      heroImage: '/assets/var_living_dining_1790654677757.jpg',
       gallery: [
-        '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
-        '/src/assets/images/var_showroom_1790654664447.jpg',
+        '/assets/var_hero_kitchen_1790654633654.jpg',
+        '/assets/var_showroom_1790654664447.jpg',
       ],
       overview:
         'A light-filled open concept family living area featuring an acoustic fluted timber feature wall, floating travertine TV credenza, and custom architectural ceiling coves.',
@@ -98,10 +98,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       category: 'bedrooms',
       categoryLabel: 'Bedroom',
       location: 'Auroville Vicinity, Puducherry',
-      heroImage: '/src/assets/images/var_kitchen_detail_1790654739950.jpg',
+      heroImage: '/assets/var_kitchen_detail_1790654739950.jpg',
       gallery: [
-        '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
-        '/src/assets/images/var_living_dining_1790654677757.jpg',
+        '/assets/var_wardrobe_luxury_1790654724721.jpg',
+        '/assets/var_living_dining_1790654677757.jpg',
       ],
       overview:
         'A serene master suite prioritizing tactile calmness, featuring custom curved acoustic wall panels, cantilevered bedside tables, and custom concealed vanity.',
@@ -124,10 +124,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       category: 'commercial',
       categoryLabel: 'Commercial',
       location: 'Anna Salai, Puducherry',
-      heroImage: '/src/assets/images/var_showroom_1790654664447.jpg',
+      heroImage: '/assets/var_showroom_1790654664447.jpg',
       gallery: [
-        '/src/assets/images/var_hardware_hero_1790654652422.jpg',
-        '/src/assets/images/var_handles_accessories_1790654753472.jpg',
+        '/assets/var_hardware_hero_1790654652422.jpg',
+        '/assets/var_handles_accessories_1790654753472.jpg',
       ],
       overview:
         'A sophisticated design studio and consulting suite combining modular glass partitions, acoustic meeting booths, and high-density architectural material sample libraries.',
@@ -150,10 +150,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
       category: 'kitchens',
       categoryLabel: 'Full Residence',
       location: 'Muthialpet, Puducherry',
-      heroImage: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      heroImage: '/assets/var_living_dining_1790654677757.jpg',
       gallery: [
-        '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
-        '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+        '/assets/var_hero_kitchen_1790654633654.jpg',
+        '/assets/var_wardrobe_luxury_1790654724721.jpg',
       ],
       overview:
         'A 2,800 sq.ft turnkey residence executed seamlessly from initial CAD civil blueprints through bespoke carpentry, false ceilings, lighting design, and European hardware fit-out.',

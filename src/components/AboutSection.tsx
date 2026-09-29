@@ -71,7 +71,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[16/10] rounded-xs overflow-hidden border border-[#D9DAD0] shadow-xl bg-[#1C1D1A]">
               <img
-                src="/src/assets/images/var_showroom_1790654664447.jpg"
+                src="/assets/var_showroom_1790654664447.jpg"
                 alt="VAR Interiors & Hardwares Architectural Studio & Showroom"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

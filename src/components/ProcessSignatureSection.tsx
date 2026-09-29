@@ -140,7 +140,7 @@ export const ProcessSignatureSection: React.FC<ProcessSignatureSectionProps> = (
             {/* Left Image */}
             <div className="lg:col-span-7 relative h-72 lg:h-96">
               <img
-                src="/src/assets/images/var_living_dining_1790654677757.jpg"
+                src="/assets/var_living_dining_1790654677757.jpg"
                 alt="VAR Interiors completed dining and living architecture"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

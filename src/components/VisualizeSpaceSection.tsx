@@ -11,23 +11,23 @@ export const VisualizeSpaceSection: React.FC<{ onConsult: (topic?: string) => vo
   // High fidelity before and after images for each room type
   const roomData = {
     Kitchen: {
-      before: '/src/assets/images/var_kitchen_detail_1790654739950.jpg',
-      after: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      before: '/assets/var_kitchen_detail_1790654739950.jpg',
+      after: '/assets/var_hero_kitchen_1790654633654.jpg',
       specs: 'Muted olive matte PU cabinetry, seamless quartz waterfall island, soft-close hardware & ambient LED illumination.',
     },
     Wardrobe: {
-      before: '/src/assets/images/var_handles_accessories_1790654753472.jpg',
-      after: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+      before: '/assets/var_handles_accessories_1790654753472.jpg',
+      after: '/assets/var_wardrobe_luxury_1790654724721.jpg',
       specs: 'Floor-to-ceiling smoked fluted glass, trackless sliding system, sensor LED strip channels & velvet-lined organizers.',
     },
     'Living Room': {
-      before: '/src/assets/images/var_showroom_1790654664447.jpg',
-      after: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      before: '/assets/var_showroom_1790654664447.jpg',
+      after: '/assets/var_living_dining_1790654677757.jpg',
       specs: 'Acoustic fluted oak feature wall, floating credenza, integrated 2700K cove lighting & travertine dining accents.',
     },
     Bedroom: {
-      before: '/src/assets/images/var_hardware_hero_1790654652422.jpg',
-      after: '/src/assets/images/var_living_dining_1790654677757.jpg',
+      before: '/assets/var_hardware_hero_1790654652422.jpg',
+      after: '/assets/var_living_dining_1790654677757.jpg',
       specs: 'Bespoke bouclé curved acoustic headboard wall, cantilevered bedside ledges & concealed tri-fold vanity unit.',
     },
   };
