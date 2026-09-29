@@ -314,35 +314,35 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                     )}
                   </button>
 
-                  {/* Notification Drawer Dropdown */}
+                  {/* Notification Drawer Dropdown - Fully Responsive on Mobile & Desktop */}
                   {notificationsOpen && (
-                    <div className="absolute right-0 mt-2 w-80 bg-[#F7F6F1] text-[#1C1D1A] border border-[#D9DAD0] rounded-xs shadow-2xl z-50 p-4 space-y-3">
+                    <div className="fixed inset-x-3 top-14 sm:absolute sm:inset-x-auto sm:right-0 sm:top-auto sm:mt-2 w-auto sm:w-84 max-w-sm bg-[#F7F6F1] text-[#1C1D1A] border border-[#D9DAD0] rounded-xs shadow-2xl z-50 p-4 space-y-3">
                       <div className="flex items-center justify-between border-b border-[#D9DAD0] pb-2">
                         <span className="text-xs uppercase tracking-wider font-bold text-[#62645A]">
                           Project Notifications
                         </span>
-                        <span className="text-[10px] text-[#77786F]">5 updates</span>
+                        <span className="text-[10px] text-[#77786F] font-mono">5 updates</span>
                       </div>
-                      <div className="space-y-2 text-xs">
-                        <div className="p-2 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer">
-                          <div className="font-semibold text-[#1C1D1A]">New project photo uploaded.</div>
-                          <div className="text-[10px] text-[#77786F]">Yesterday · Countertop sealing inspection</div>
+                      <div className="space-y-2 text-xs max-h-72 overflow-y-auto">
+                        <div className="p-2.5 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer transition-colors">
+                          <div className="font-semibold text-[#1C1D1A] leading-snug">New project photo uploaded.</div>
+                          <div className="text-[10px] text-[#77786F] mt-0.5">Yesterday · Countertop sealing inspection</div>
                         </div>
-                        <div className="p-2 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer">
-                          <div className="font-semibold text-amber-700">Material approval required.</div>
-                          <div className="text-[10px] text-[#77786F]">Calacatta Gold Quartz countertop slab</div>
+                        <div className="p-2.5 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer transition-colors">
+                          <div className="font-semibold text-amber-700 leading-snug">Material approval required.</div>
+                          <div className="text-[10px] text-[#77786F] mt-0.5">Calacatta Gold Quartz countertop slab</div>
                         </div>
-                        <div className="p-2 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer">
-                          <div className="font-semibold text-[#1C1D1A]">Project milestone completed.</div>
-                          <div className="text-[10px] text-[#77786F]">Cabinetry joinery & leveling</div>
+                        <div className="p-2.5 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer transition-colors">
+                          <div className="font-semibold text-[#1C1D1A] leading-snug">Project milestone completed.</div>
+                          <div className="text-[10px] text-[#77786F] mt-0.5">Cabinetry joinery & leveling</div>
                         </div>
-                        <div className="p-2 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer">
-                          <div className="font-semibold text-[#1C1D1A]">New message from Project Manager.</div>
-                          <div className="text-[10px] text-[#77786F]">S. Rajesh: "Countertop sealing completed..."</div>
+                        <div className="p-2.5 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer transition-colors">
+                          <div className="font-semibold text-[#1C1D1A] leading-snug">New message from Project Manager.</div>
+                          <div className="text-[10px] text-[#77786F] mt-0.5">S. Rajesh: "Countertop sealing completed..."</div>
                         </div>
-                        <div className="p-2 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer">
-                          <div className="font-semibold text-[#1C1D1A]">Quotation updated.</div>
-                          <div className="text-[10px] text-[#77786F]">Phase 2 additional electrical points added</div>
+                        <div className="p-2.5 bg-[#EEEDE6] rounded-xs hover:bg-[#D9DAD0]/60 cursor-pointer transition-colors">
+                          <div className="font-semibold text-[#1C1D1A] leading-snug">Quotation updated.</div>
+                          <div className="text-[10px] text-[#77786F] mt-0.5">Phase 2 additional electrical points added</div>
                         </div>
                       </div>
                     </div>
@@ -911,34 +911,36 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                       ].map((doc, idx) => (
                         <div
                           key={idx}
-                          className="bg-[#EEEDE6] border border-[#D9DAD0] p-4 rounded-xs flex items-center justify-between"
+                          className="bg-[#EEEDE6] border border-[#D9DAD0] p-4 rounded-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3"
                         >
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-xs bg-[#D9DAD0] flex items-center justify-center text-[#62645A]">
+                          <div className="flex items-center gap-3 min-w-0">
+                            <div className="w-10 h-10 rounded-xs bg-[#D9DAD0] flex items-center justify-center text-[#62645A] shrink-0">
                               <FileText className="w-5 h-5" />
                             </div>
-                            <div>
-                              <h4 className="text-xs font-semibold text-[#1C1D1A]">{doc.title}</h4>
+                            <div className="min-w-0">
+                              <h4 className="text-xs font-semibold text-[#1C1D1A] break-words">{doc.title}</h4>
                               <div className="text-[10px] text-[#77786F] mt-0.5">
                                 {doc.type} · {doc.size} · {doc.date}
                               </div>
                             </div>
                           </div>
 
-                          <div className="flex items-center gap-1">
+                          <div className="flex items-center gap-2 self-end sm:self-center shrink-0 w-full sm:w-auto">
                             <button
                               onClick={() => showToast(`Previewing ${doc.title}`)}
-                              className="p-1.5 text-[#62645A] hover:bg-[#D9DAD0] rounded-xs cursor-pointer"
+                              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs text-[#1C1D1A] bg-white border border-[#D9DAD0] hover:bg-[#D9DAD0] rounded-xs cursor-pointer font-medium transition-colors"
                               title="View Document"
                             >
-                              <Eye className="w-4 h-4" />
+                              <Eye className="w-3.5 h-3.5 text-[#62645A]" />
+                              <span>View</span>
                             </button>
                             <button
                               onClick={() => showToast(`Downloading ${doc.title}`)}
-                              className="p-1.5 text-[#62645A] hover:bg-[#D9DAD0] rounded-xs cursor-pointer"
+                              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs text-white bg-[#62645A] hover:bg-[#46483F] rounded-xs cursor-pointer font-medium transition-colors"
                               title="Download PDF"
                             >
-                              <Download className="w-4 h-4" />
+                              <Download className="w-3.5 h-3.5" />
+                              <span>Download</span>
                             </button>
                           </div>
                         </div>
@@ -1189,46 +1191,46 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                       </span>
                     </div>
 
-                    <div className="bg-[#EEEDE6] border border-[#D9DAD0] p-6 rounded-xs space-y-4">
+                    <div className="bg-[#EEEDE6] border border-[#D9DAD0] p-4 sm:p-6 rounded-xs space-y-4">
                       <div className="divide-y divide-[#D9DAD0] text-xs">
-                        <div className="py-2.5 flex justify-between items-center">
-                          <div>
+                        <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+                          <div className="min-w-0">
                             <span className="font-semibold text-[#1C1D1A]">01. Architectural Design & 3D CAD Detailing</span>
                             <div className="text-[10px] text-[#77786F]">Space planning, elevation drawings & MEP coordination</div>
                           </div>
-                          <span className="font-mono font-semibold">₹ 45,000</span>
+                          <span className="font-mono font-semibold shrink-0 sm:text-right">₹ 45,000</span>
                         </div>
 
-                        <div className="py-2.5 flex justify-between items-center">
-                          <div>
+                        <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+                          <div className="min-w-0">
                             <span className="font-semibold text-[#1C1D1A]">02. Bespoke Materials & Marine Ply Carcass</span>
                             <div className="text-[10px] text-[#77786F]">BWP boiling waterproof core, PU lacquer & Calacatta quartz</div>
                           </div>
-                          <span className="font-mono font-semibold">₹ 3,85,000</span>
+                          <span className="font-mono font-semibold shrink-0 sm:text-right">₹ 3,85,000</span>
                         </div>
 
-                        <div className="py-2.5 flex justify-between items-center">
-                          <div>
+                        <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+                          <div className="min-w-0">
                             <span className="font-semibold text-[#1C1D1A]">03. European Mechanical Hardware Package</span>
                             <div className="text-[10px] text-[#77786F]">German soft-close hinges, tandem runners, lift-up stays</div>
                           </div>
-                          <span className="font-mono font-semibold">₹ 95,000</span>
+                          <span className="font-mono font-semibold shrink-0 sm:text-right">₹ 95,000</span>
                         </div>
 
-                        <div className="py-2.5 flex justify-between items-center">
-                          <div>
+                        <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+                          <div className="min-w-0">
                             <span className="font-semibold text-[#1C1D1A]">04. Expert Installation & Laser Leveling</span>
                             <div className="text-[10px] text-[#77786F]">In-house certified carpenters, dust-free fitting & deep clean</div>
                           </div>
-                          <span className="font-mono font-semibold">₹ 65,000</span>
+                          <span className="font-mono font-semibold shrink-0 sm:text-right">₹ 65,000</span>
                         </div>
 
-                        <div className="py-2.5 flex justify-between items-center">
-                          <div>
+                        <div className="py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+                          <div className="min-w-0">
                             <span className="font-semibold text-[#1C1D1A]">05. Additional Integrated Lighting Channels</span>
                             <div className="text-[10px] text-[#77786F]">2700K concealed warm profiles with dimmer drivers</div>
                           </div>
-                          <span className="font-mono font-semibold">₹ 28,000</span>
+                          <span className="font-mono font-semibold shrink-0 sm:text-right">₹ 28,000</span>
                         </div>
                       </div>
 
@@ -1247,14 +1249,14 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                         </div>
                       </div>
 
-                      <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-[#D9DAD0]">
+                      <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 border-t border-[#D9DAD0]">
                         <span className="text-xs text-[#77786F]">
                           Payment Milestone 3 (Installation 68%): Verified
                         </span>
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 w-full sm:w-auto">
                           <button
                             onClick={() => showToast('Full quotation PDF downloaded.')}
-                            className="border border-[#77786F] hover:bg-[#D9DAD0] text-[#1C1D1A] text-xs font-semibold px-4 py-2 rounded-xs uppercase tracking-wider transition-colors cursor-pointer"
+                            className="flex-1 sm:flex-initial border border-[#77786F] hover:bg-[#D9DAD0] text-[#1C1D1A] text-xs font-semibold px-4 py-2.5 rounded-xs uppercase tracking-wider transition-colors cursor-pointer text-center"
                           >
                             View Full Quote
                           </button>
@@ -1263,7 +1265,7 @@ export const CustomerPortalModal: React.FC<CustomerPortalModalProps> = ({
                               setQuoteApproved(true);
                               showToast('Quotation milestone Approved!');
                             }}
-                            className="bg-[#62645A] hover:bg-[#46483F] text-white text-xs font-semibold px-5 py-2 rounded-xs uppercase tracking-wider transition-colors cursor-pointer"
+                            className="flex-1 sm:flex-initial bg-[#62645A] hover:bg-[#46483F] text-white text-xs font-semibold px-5 py-2.5 rounded-xs uppercase tracking-wider transition-colors cursor-pointer text-center"
                           >
                             {quoteApproved ? '✓ Quote Approved' : 'Approve Quote'}
                           </button>

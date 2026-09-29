@@ -102,59 +102,59 @@ export const CustomerPortalPreview: React.FC<CustomerPortalPreviewProps> = ({
 
               {/* Dashboard Layout Body */}
               <div className="grid grid-cols-1 md:grid-cols-12 min-h-[380px]">
-                {/* Left Mini Sidebar */}
-                <div className="md:col-span-4 bg-[#1F201C] p-4 border-r border-[#46483F] flex flex-col justify-between">
-                  <div className="space-y-1">
+                {/* Mini Navigation: Horizontal bar on mobile, Sidebar on desktop */}
+                <div className="md:col-span-4 bg-[#1F201C] p-3 sm:p-4 border-b md:border-b-0 md:border-r border-[#46483F] flex flex-row md:flex-col justify-between overflow-x-auto scrollbar-none gap-2">
+                  <div className="flex md:flex-col items-center md:items-stretch gap-1 sm:gap-1.5 shrink-0">
                     <button
                       onClick={() => setActiveTab('overview')}
-                      className={`w-full text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2.5 transition-colors cursor-pointer ${
+                      className={`whitespace-nowrap text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2 transition-colors cursor-pointer shrink-0 ${
                         activeTab === 'overview'
                           ? 'bg-[#62645A] text-white font-semibold'
                           : 'text-[#D9DAD0] hover:bg-[#2A2C26]'
                       }`}
                     >
-                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
                       <span>My Project</span>
                     </button>
 
                     <button
                       onClick={() => setActiveTab('updates')}
-                      className={`w-full text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2.5 transition-colors cursor-pointer ${
+                      className={`whitespace-nowrap text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2 transition-colors cursor-pointer shrink-0 ${
                         activeTab === 'updates'
                           ? 'bg-[#62645A] text-white font-semibold'
                           : 'text-[#D9DAD0] hover:bg-[#2A2C26]'
                       }`}
                     >
-                      <ImageIcon className="w-3.5 h-3.5" />
+                      <ImageIcon className="w-3.5 h-3.5 shrink-0" />
                       <span>Updates & Photos</span>
                     </button>
 
                     <button
                       onClick={() => setActiveTab('docs')}
-                      className={`w-full text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2.5 transition-colors cursor-pointer ${
+                      className={`whitespace-nowrap text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2 transition-colors cursor-pointer shrink-0 ${
                         activeTab === 'docs'
                           ? 'bg-[#62645A] text-white font-semibold'
                           : 'text-[#D9DAD0] hover:bg-[#2A2C26]'
                       }`}
                     >
-                      <FileText className="w-3.5 h-3.5" />
+                      <FileText className="w-3.5 h-3.5 shrink-0" />
                       <span>Documents (CAD)</span>
                     </button>
 
                     <button
                       onClick={() => setActiveTab('chat')}
-                      className={`w-full text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2.5 transition-colors cursor-pointer ${
+                      className={`whitespace-nowrap text-left px-3 py-2 text-xs rounded-xs flex items-center gap-2 transition-colors cursor-pointer shrink-0 ${
                         activeTab === 'chat'
                           ? 'bg-[#62645A] text-white font-semibold'
                           : 'text-[#D9DAD0] hover:bg-[#2A2C26]'
                       }`}
                     >
-                      <MessageSquare className="w-3.5 h-3.5" />
+                      <MessageSquare className="w-3.5 h-3.5 shrink-0" />
                       <span>Project Manager</span>
                     </button>
                   </div>
 
-                  <div className="pt-4 border-t border-[#46483F] text-[10px] text-[#77786F]">
+                  <div className="hidden md:block pt-4 border-t border-[#46483F] text-[10px] text-[#77786F]">
                     Client: Mr. & Mrs. Ramanathan
                     <br />
                     Site: White Town Villa #12

@@ -65,17 +65,17 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           </button>
         </div>
 
-        {/* View Switcher Tabs (Requirement #17) */}
-        <div className="px-6 py-2.5 bg-white border-b border-[#D9DAD0] flex items-center gap-2">
+        {/* View Switcher Tabs - Horizontally scrollable on mobile */}
+        <div className="px-4 sm:px-6 py-2 bg-white border-b border-[#D9DAD0] flex items-center gap-2 overflow-x-auto scrollbar-none">
           {[
-            { id: 'overview', label: 'Project Overview & Gallery' },
+            { id: 'overview', label: 'Overview & Gallery' },
             { id: 'beforeAfter', label: 'Before & After' },
             { id: 'timeline', label: 'Execution Timeline' },
           ].map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id as any)}
-              className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors cursor-pointer ${
+              className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-xs transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === tab.id
                   ? 'bg-[#62645A] text-white'
                   : 'text-[#46483F] hover:bg-[#EEEDE6]'
@@ -87,7 +87,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
         </div>
 
         {/* Modal Content Scroll Area */}
-        <div className="overflow-y-auto p-6 sm:p-8 space-y-8">
+        <div className="overflow-y-auto p-4 sm:p-8 space-y-6 sm:space-y-8">
           {/* TAB 1: OVERVIEW & GALLERY */}
           {activeTab === 'overview' && (
             <>

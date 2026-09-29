@@ -119,18 +119,28 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2">
+          {/* Mobile Actions: Search, Portal & Menu Toggle */}
+          <div className="flex md:hidden items-center gap-1.5 sm:gap-2">
+            <button
+              onClick={onOpenSearch}
+              className={`p-1.5 rounded-xs transition-colors cursor-pointer ${
+                isScrolled ? 'text-[#1C1D1A]' : 'text-white'
+              }`}
+              title="Search Materials & Spaces"
+              aria-label="Search"
+            >
+              <Search className="w-5 h-5" />
+            </button>
             <button
               onClick={() => onOpenPortal('dashboard')}
-              className="bg-[#62645A] text-[#F7F6F1] text-[10px] font-semibold uppercase tracking-wider px-2 py-1.5 rounded-xs flex items-center gap-1"
+              className="bg-[#62645A] hover:bg-[#46483F] text-[#F7F6F1] text-[10px] sm:text-xs font-semibold uppercase tracking-wider px-2.5 py-1.5 rounded-xs flex items-center gap-1.5 cursor-pointer"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
               <span>Portal</span>
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`p-1.5 rounded-xs ${
+              className={`p-1.5 rounded-xs cursor-pointer ${
                 isScrolled ? 'text-[#1C1D1A]' : 'text-white'
               }`}
               aria-label="Toggle Menu"

@@ -72,14 +72,14 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Action Buttons (Panel 11) */}
-            <div className="grid grid-cols-3 gap-3 pt-2">
+            {/* Quick Action Buttons (Panel 11) - Responsive on mobile */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 pt-2">
               <a
                 href={`tel:${phone.replace(/\s+/g, '')}`}
                 className="bg-[#62645A] hover:bg-[#46483F] text-white py-3 px-4 rounded-xs text-xs uppercase tracking-[0.16em] font-bold flex items-center justify-center gap-2 transition-colors text-center shadow-xs"
               >
                 <Phone className="w-3.5 h-3.5" />
-                <span>Call</span>
+                <span>Call Showroom</span>
               </a>
 
               <a

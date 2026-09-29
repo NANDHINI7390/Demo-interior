@@ -96,10 +96,10 @@ export const HardwareSection: React.FC<HardwareSectionProps> = ({
               Premium fittings and accessories for beautiful, functional spaces. Engineered for effortless, silent motion and lasting durability.
             </p>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
               <button
                 onClick={() => setSelectedCategory(categories[7])}
-                className="bg-[#62645A] hover:bg-[#46483F] text-white text-xs uppercase tracking-[0.18em] font-bold px-6 py-3.5 rounded-xs transition-colors shadow-sm flex items-center gap-2 group"
+                className="bg-[#62645A] hover:bg-[#46483F] text-white text-xs uppercase tracking-[0.18em] font-bold px-6 py-3.5 rounded-xs transition-colors shadow-sm flex items-center gap-2 group cursor-pointer"
               >
                 <span>View All Products</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -123,19 +123,19 @@ export const HardwareSection: React.FC<HardwareSectionProps> = ({
               <div className="absolute inset-0 bg-gradient-to-t from-[#1C1D1A]/80 via-transparent to-transparent" />
               
               {/* Floating Technical Spec Callout */}
-              <div className="absolute bottom-5 left-5 right-5 bg-[#F7F6F1]/95 backdrop-blur-md p-4 border border-[#D9DAD0] rounded-xs flex items-center justify-between">
-                <div>
-                  <div className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#62645A]">
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 bg-[#F7F6F1]/95 backdrop-blur-md p-3 sm:p-4 border border-[#D9DAD0] rounded-xs flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <div className="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase font-bold text-[#62645A]">
                     Featured Fitting
                   </div>
-                  <div className="text-sm font-serif font-semibold text-[#1C1D1A]">
+                  <div className="text-xs sm:text-sm font-serif font-semibold text-[#1C1D1A] truncate">
                     Integrated Silent-Damping Concealed Hinge
                   </div>
-                  <div className="text-[11px] text-[#77786F] mt-0.5">
+                  <div className="text-[10px] sm:text-[11px] text-[#77786F] mt-0.5 truncate">
                     Tested to 200,000 cycles · 3D Cam adjustment
                   </div>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-[#46483F] text-[#F7F6F1] flex items-center justify-center font-bold text-xs shrink-0">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#46483F] text-[#F7F6F1] flex items-center justify-center font-bold text-xs shrink-0">
                   A+
                 </div>
               </div>
@@ -144,12 +144,12 @@ export const HardwareSection: React.FC<HardwareSectionProps> = ({
         </div>
 
         {/* Categories Section Heading */}
-        <div className="border-t border-[#D9DAD0] pt-12 pb-6">
-          <div className="flex items-center justify-between">
-            <h3 className="font-serif text-2xl text-[#1C1D1A] font-normal">
+        <div className="border-t border-[#D9DAD0] pt-10 sm:pt-12 pb-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h3 className="font-serif text-xl sm:text-2xl text-[#1C1D1A] font-normal">
               Browse Hardware Categories
             </h3>
-            <span className="text-xs text-[#62645A] uppercase tracking-[0.2em] font-semibold">
+            <span className="text-[11px] sm:text-xs text-[#62645A] uppercase tracking-[0.2em] font-semibold">
               Live Stock at Puducherry Showroom
             </span>
           </div>
