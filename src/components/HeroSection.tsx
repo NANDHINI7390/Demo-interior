@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Compass, ShieldCheck, Wrench, Layers, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Compass, ShieldCheck, Wrench, Layers } from 'lucide-react';
 
 interface HeroSectionProps {
   onExploreInteriors: () => void;
@@ -19,12 +19,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreHardware,
   onConsultVar,
 }) => {
+  // Replaced first image with the third image (Luxury Wardrobe is now first, Kitchen is third)
   const slides: SlideItem[] = [
     {
       id: 0,
-      image: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
-      tag: 'MODULAR KITCHEN & LIVING',
-      room: 'Contemporary Open Kitchen Suite',
+      image: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
+      tag: 'BESPOKE WARDROBES & SUITES',
+      room: 'Floor-to-Ceiling Dressing Suite',
     },
     {
       id: 1,
@@ -34,9 +35,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     },
     {
       id: 2,
-      image: '/src/assets/images/var_wardrobe_luxury_1790654724721.jpg',
-      tag: 'BESPOKE WARDROBES',
-      room: 'Floor-to-Ceiling Dressing Suite',
+      image: '/src/assets/images/var_hero_kitchen_1790654633654.jpg',
+      tag: 'MODULAR KITCHEN & LIVING',
+      room: 'Contemporary Open Kitchen Suite',
     },
     {
       id: 3,
@@ -62,14 +63,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [isPaused, slides.length]);
-
-  const handlePrev = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
 
   return (
     <section
@@ -182,58 +175,38 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
 
-        {/* Slide Indicators & Navigation Controls */}
+        {/* Slide Indicators: Small elegant dots indicating auto-slide progression (No play/arrow buttons) */}
         <div className="mt-10 sm:mt-12 flex items-center justify-between">
-          {/* 4 Slide Progress Bars */}
+          {/* Small Indicator Dots */}
           <div className="flex items-center gap-2.5">
-            {slides.map((s, idx) => (
-              <button
-                key={s.id}
-                onClick={() => setCurrentSlide(idx)}
-                className="group p-1 cursor-pointer"
-                aria-label={`Go to slide ${idx + 1}`}
-              >
-                <div
-                  className={`h-1 rounded-full transition-all duration-500 overflow-hidden ${
-                    currentSlide === idx
-                      ? 'w-10 sm:w-14 bg-[#46483F]'
-                      : 'w-3 sm:w-4 bg-white/30 hover:bg-white/60'
-                  }`}
+            {slides.map((s, idx) => {
+              const isActive = currentSlide === idx;
+              return (
+                <button
+                  key={s.id}
+                  onClick={() => setCurrentSlide(idx)}
+                  className="group py-2 px-1 cursor-pointer focus:outline-none"
+                  aria-label={`Go to slide ${idx + 1}`}
                 >
-                  {currentSlide === idx && (
-                    <div
-                      className={`h-full bg-gradient-to-r from-[#D9DAD0] to-[#F7F6F1] ${
-                        !isPaused ? 'animate-[pulse_2s_infinite]' : ''
-                      }`}
-                    />
-                  )}
-                </div>
-              </button>
-            ))}
+                  <div
+                    className={`h-2 rounded-full transition-all duration-500 relative flex items-center justify-center ${
+                      isActive
+                        ? 'w-7 bg-[#D9DAD0] shadow-[0_0_8px_rgba(217,218,208,0.5)]'
+                        : 'w-2 bg-white/35 hover:bg-white/70'
+                    }`}
+                  >
+                    {isActive && (
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#46483F] animate-pulse" />
+                    )}
+                  </div>
+                </button>
+              );
+            })}
           </div>
 
-          {/* Slide Arrow Navigation & Counter */}
-          <div className="flex items-center gap-3">
-            <span className="text-[11px] font-mono tracking-widest text-[#D9DAD0]/80">
-              0{currentSlide + 1} / 0{slides.length}
-            </span>
-
-            <div className="flex items-center gap-1.5">
-              <button
-                onClick={handlePrev}
-                className="w-8 h-8 rounded-full border border-white/20 bg-black/20 hover:bg-black/40 text-white flex items-center justify-center transition-colors cursor-pointer"
-                aria-label="Previous slide"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <button
-                onClick={handleNext}
-                className="w-8 h-8 rounded-full border border-white/20 bg-black/20 hover:bg-black/40 text-white flex items-center justify-center transition-colors cursor-pointer"
-                aria-label="Next slide"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
+          {/* Minimal Slide Counter */}
+          <div className="text-[11px] font-mono tracking-widest text-[#D9DAD0]/80">
+            0{currentSlide + 1} / 0{slides.length}
           </div>
         </div>
       </div>
