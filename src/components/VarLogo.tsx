@@ -16,73 +16,76 @@ export const VarLogo: React.FC<VarLogoProps> = ({
   animated = false,
 }) => {
   const isLight = variant === 'light';
-  // Brand muted olive colors matching the uploaded card and identity
-  const strokeColor = isLight ? '#F7F6F1' : '#46483F';
+  // Precise brand colors matching the business card identity
+  // Dark olive-charcoal for light theme, warm ivory-gold for dark theme
+  const strokeColor = isLight ? '#F7F6F1' : '#383A32';
   const textColor = isLight ? '#F7F6F1' : '#1C1D1A';
   const subtextColor = isLight ? '#D9DAD0' : '#62645A';
 
   // Dimension scaling
   const scaleMap = {
-    sm: { symbolH: 26, fontSize: '8px', taglineSize: '7.5px', gap: 'mt-1' },
-    md: { symbolH: 34, fontSize: '9.5px', taglineSize: '8.5px', gap: 'mt-1.5' },
-    lg: { symbolH: 48, fontSize: '12px', taglineSize: '10px', gap: 'mt-2' },
-    xl: { symbolH: 64, fontSize: '15px', taglineSize: '12px', gap: 'mt-2.5' },
+    sm: { symbolH: 26, fontSize: '8px', taglineSize: '7.5px', gap: 'mt-1.5' },
+    md: { symbolH: 34, fontSize: '9.5px', taglineSize: '8.5px', gap: 'mt-2' },
+    lg: { symbolH: 48, fontSize: '12px', taglineSize: '10px', gap: 'mt-2.5' },
+    xl: { symbolH: 64, fontSize: '15px', taglineSize: '12px', gap: 'mt-3' },
   };
 
   const currentScale = scaleMap[size];
 
-  // The EXACT stylized geometric monogram from the business card
+  // The EXACT custom architectural monogram from the VAR Interiors & Hardwares business card
   const MonogramSvg = (
     <svg
-      viewBox="0 0 196 52"
+      viewBox="0 0 196 54"
       height={currentScale.symbolH}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="overflow-visible"
-      aria-label="VAR Interiors & Hardwares Monogram"
+      aria-label="VAR Interiors & Hardwares Logo"
     >
-      {/* GLYPH 1: V - Slanted down-right, smooth bottom curve, slanted up-right */}
+      {/* GLYPH 1: V - Distinctive top-left detached angled accent stroke */}
       <path
-        d="M 10 10 L 29 41 C 31 44.5 35 44.5 37 41 L 56 10"
+        d="M 10 9 L 17 20"
         stroke={strokeColor}
-        strokeWidth="9"
+        strokeWidth="8.5"
+        strokeLinecap="round"
+        className={animated ? 'animate-draw-line' : ''}
+      />
+
+      {/* GLYPH 1: V - Main body starting after gap, curving through bottom vertex and ascending up-right */}
+      <path
+        d="M 22 28 L 32.5 44.5 C 34.5 47.5 38.5 47.5 40.5 44.5 L 63 9"
+        stroke={strokeColor}
+        strokeWidth="8.5"
         strokeLinecap="round"
         strokeLinejoin="round"
         className={animated ? 'animate-draw-line' : ''}
       />
 
-      {/* GLYPH 2: A - Slanted up-right, rounded arch apex, slanted down-right */}
+      {/* GLYPH 2: A - Exact Delta Triangle with closed bottom baseline and rounded corners */}
       <path
-        d="M 62 41 L 80 12 C 82 8.5 86 8.5 88 12 L 106 41"
+        d="M 73 45 L 95.5 9 C 97 6.5 101 6.5 102.5 9 L 125 45 Z"
         stroke={strokeColor}
-        strokeWidth="9"
+        strokeWidth="8.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className={animated ? 'animate-draw-line' : ''}
-      />
-      {/* Horizontal Crossbar of A */}
-      <path
-        d="M 70 30 L 98 30"
-        stroke={strokeColor}
-        strokeWidth="8"
-        strokeLinecap="round"
         className={animated ? 'animate-draw-line' : ''}
       />
 
-      {/* GLYPH 3: R - Top horizontal bar curving down on right */}
+      {/* GLYPH 3: R - Upper stroke: horizontal bar at cap height curving 90° down at the right tip */}
       <path
-        d="M 118 10 L 168 10 C 176 10 182 15 182 22"
+        d="M 132 9 L 170 9 C 178 9 185 15.5 185 23.5"
         stroke={strokeColor}
-        strokeWidth="9"
+        strokeWidth="8.5"
         strokeLinecap="round"
         strokeLinejoin="round"
         className={animated ? 'animate-draw-line' : ''}
       />
-      {/* GLYPH 3: R - Bottom vertical stem curving 90deg into horizontal base bar */}
+
+      {/* GLYPH 3: R - Lower stroke: vertical stem from baseline curving 90° right into mid-bar, then curving 90° down at the right tip */}
       <path
-        d="M 126 22 L 126 31 C 126 37.5 131.5 42 138 42 L 182 42"
+        d="M 140 45 L 140 36 C 140 30.5 144.5 27 150 27 L 170 27 C 178 27 185 33.5 185 41.5"
         stroke={strokeColor}
-        strokeWidth="9"
+        strokeWidth="8.5"
         strokeLinecap="round"
         strokeLinejoin="round"
         className={animated ? 'animate-draw-line' : ''}
@@ -101,7 +104,7 @@ export const VarLogo: React.FC<VarLogoProps> = ({
   return (
     <div className={`flex flex-col select-none ${className}`}>
       {/* Exact Monogram Graphic */}
-      <div className="flex items-center justify-start">
+      <div className="flex items-center">
         {MonogramSvg}
       </div>
 
@@ -110,9 +113,9 @@ export const VarLogo: React.FC<VarLogoProps> = ({
         style={{
           color: textColor,
           fontSize: currentScale.fontSize,
-          letterSpacing: '0.24em',
+          letterSpacing: '0.22em',
         }}
-        className={`font-bold uppercase tracking-[0.24em] ${currentScale.gap} whitespace-nowrap font-sans transition-colors`}
+        className={`font-semibold uppercase tracking-[0.22em] ${currentScale.gap} whitespace-nowrap font-sans transition-colors`}
       >
         VAR INTERIORS & HARDWARES
       </span>

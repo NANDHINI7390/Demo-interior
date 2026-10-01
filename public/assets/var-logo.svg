@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- VAR Monogram from Original Brand Identity -->
+  <!-- V Glyph: detached top-left accent stroke + curved main body -->
+  <path d="M 12 11 L 19 22" stroke="#383A32" stroke-width="8.5" stroke-linecap="round"/>
+  <path d="M 24 30 L 34.5 46.5 C 36.5 49.5 40.5 49.5 42.5 46.5 L 65 11" stroke="#383A32" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- A Glyph: Modern Architectural Delta Triangle with closed baseline and rounded vertices -->
+  <path d="M 75 47 L 97.5 11 C 99 8.5 103 8.5 104.5 11 L 127 47 Z" stroke="#383A32" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- R Glyph: Upper horizontal bar curving 90° down at right tip + Lower stem rising from baseline curving 90° right, then curving 90° down at right tip -->
+  <path d="M 134 11 L 172 11 C 180 11 187 17.5 187 25.5" stroke="#383A32" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 142 47 L 142 38 C 142 32.5 146.5 29 152 29 L 172 29 C 180 29 187 35.5 187 43.5" stroke="#383A32" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Brand Name Typography -->
+  <text x="12" y="64" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" letter-spacing="0.22em" fill="#1C1D1A">VAR INTERIORS &amp; HARDWARES</text>
+</svg>
